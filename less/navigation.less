@@ -1,1 +1,30 @@
-// Navigation code here
+nav {
+    .custom-layout(center, center, column);
+    background: @nav-bg;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.5;
+    padding: 1.3rem 0 1.1rem;
+    &:hover {
+        opacity: 1;
+    }
+    .nav-header{
+        font-size: 4rem;
+    }
+    .navbar {
+        padding-top: 2rem;
+    }
+    .navbar a{
+        text-decoration: none;
+        padding: 0 2.3rem 0 0.9rem;
+        font-size: 1.6rem;
+        color: @nav-font;
+        &:first-child{
+            padding-left: 0;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+}
