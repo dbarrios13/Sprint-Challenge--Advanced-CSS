@@ -5,3 +5,17 @@
     align-items: @align;
     flex-direction: @direction;
 }
+
+.custom-btn (@bg-color, @font-color) {
+    button{
+        font-size: 1.9rem;
+        padding: 6px 15px 5px 16px;
+        border-radius: 5px;
+        background: @bg-color;
+        color: @font-color;
+        &:hover {
+            background: @font-color;
+            color: @bg-color;
+        }
+    }
+}
