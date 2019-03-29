@@ -3,6 +3,7 @@
 .home {
 
   .intro {
+    margin-top: 10rem;
     img {
       border-radius: 6px;
       width: 100%;
@@ -20,7 +21,14 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     width: 100%;
+    animation: enter 5s ease-out;
+
+    @keyframes enter {
+      from {left: -1100px;}
+      to {left: 0px;}
+    }
 
     img {
       width: 28%;

@@ -171,7 +171,14 @@ nav {
   align-items: center;
   flex-direction: column;
   background: #F6F6F6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.5;
   padding: 1.3rem 0 1.1rem;
+}
+nav:hover {
+  opacity: 1;
 }
 nav .nav-header {
   font-size: 4rem;
@@ -201,6 +208,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  margin-top: 10rem;
+}
 .home .intro img {
   border-radius: 6px;
   width: 100%;
@@ -214,7 +224,17 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   width: 100%;
+  animation: enter 5s ease-out;
+}
+@keyframes enter {
+  from {
+    left: -1100px;
+  }
+  to {
+    left: 0px;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -297,4 +317,57 @@ footer {
     width: 100%;
     margin-left: 0;
   }
+}
+.sign-up-form {
+  margin-top: 20px;
+}
+.sign-up-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sign-up-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #23293B;
+  color: #F1F1F1;
+  margin: 0 auto 20px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.sign-up-form form .form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+.sign-up-form form .form-content input {
+  padding: 6px 80px;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+.sign-up-form form .form-content div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 20px;
+}
+.sign-up-form form .form-address input {
+  padding: 6px 80px;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+.sign-up-form form .form-address select {
+  width: 100%;
+}
+.sign-up-form form button {
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px 0;
 }
